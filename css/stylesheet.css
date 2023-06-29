@@ -1,0 +1,219 @@
+/* used to set background for all pages */ 
+body {
+    background-image: linear-gradient(aliceblue ,azure, aliceblue);
+}
+/* main id used to keep elements in grid */
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 1fr 1fr 1fr;
+    grid-row-gap: 100px;
+}
+/* used for additional grid formations */
+#wrapper2 {
+    display: grid;
+    grid-row-gap: 130px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 1fr 100px 1fr;
+}
+/* used to keep language symbols in grid */
+#languages{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    align-items: center;
+    position: fixed;
+}
+/* used to set properties of language symbols */
+#chinese, #NZ, #spanish, #afrikaans, #arabic, #Hindi {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border: solid black 1px;
+}
+/* used to change properties of language symbols */
+#chinese:hover, #NZ:hover, #spanish:hover, #afrikaans:hover, #arabic:hover, #Hindi:hover{
+    background-color: darkgray;
+}
+/* used to set individual properties of chinese symbol */
+#chinese {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+/* used to set individual properties of english symbol */
+#NZ {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+/* used to set individual properties of spanish symbol */
+#spanish {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+/* used to set individual properties of afrikaans symbol */
+#afrikaans {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+/* used to set individual properties of arabic symbol */
+#arabic {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+/* used to set individual properties of hindi symbol */
+#Hindi {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+/* used to keep pepeha elements in grid */
+#pepeha {
+    background-color: white;
+    border-left: solid black 0.5px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    padding-left: 10px;
+    text-align: center;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-areas: "Maori English"
+}
+/* used to set individual properties of Te reo element */
+#maori {
+    border-right: 1px solid black;
+    font-family: cursive;
+}
+/* used to set individual properties of set language (english) element */
+#english {
+    border-left: 1px black solid;
+    font-family: cursive;
+}
+/* used to keep nav elements in grid */
+nav {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 75px;
+    grid-column-start: 9;
+    grid-column-end: 10;
+    border: solid black 1px;
+    border-radius: 10px;
+    position: relative;
+    grid-row-end: 2;
+}
+/* used to set properties of nav elements */
+#Portfolio, #About, #Contact, #introduction {
+    background-color: lightblue;
+    border: solid black 1px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: cursive;
+}
+/* used to set individual properties of introduction/pepeha element */
+#introduction {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+/* used to set individual properties of portfolio/CV element */
+#Portfolio {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+/* used to change properties of nav elements */
+#Portfolio :hover, #About :hover, #Contact :hover, #introduction :hover {
+    color: black;
+}
+/* used to set properties of main content element */
+#main {
+    height: 380px;
+    background-color: white;
+    border-left: solid black 0.5px;
+    border-right: solid black 1px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    padding-left: 10px;
+    text-align: center;
+    grid-row-start: 2;
+    font-family: monospace;
+}
+/* used to set external individual properties of profile image */
+#barney {
+    height: 380px;
+    width: 300px;
+    border-left: solid black 1px;
+    border-right: solid black 0.5px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+/* used to set individual properties of profile image */
+#image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+}
+/* used to contact element in grid */
+#contactwrapper {
+    display: grid;
+    grid-template-columns: 300px 600px;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-template-rows: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-column-gap: 2px;
+}
+/* used to keep CV elements in grid */
+#cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+}
+/* used to set individual properties of contact element */
+#contacts {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: white;
+    border: 2px solid black;
+    grid-row-start: 1;
+}
+/* used to set properties of cv elements */
+#experience,#education,#skills {
+    background-color: white;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-left: 20px;
+    font-family: sans-serif;
+}
+/* used to set individual properties of experience element */
+#experience {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 7;
+    grid-row-end: 2;
+}
+/* used to set individual properties of skills element */
+#skills {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: 7;
+    grid-row-end: 3;
+}
+/* used to set individual properties of education element */
+#education {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-column-end: 7;
+    grid-row-end: 4;
+    border-bottom: 2px solid black;
+}
+  
